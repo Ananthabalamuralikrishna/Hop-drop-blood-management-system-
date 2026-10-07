@@ -16,11 +16,22 @@ Finding the right blood type quickly can save a life. Hope Drop gives donors and
 
 ## ✨ Key Features
 
-- **Donor and hospital platform** that connects people who give blood with those who need it
-- **Real-time data handling** for up-to-date donor and request information
-- **JWT authentication** for secure login and protected access
+**For users (donors and patients)**
+- **Separate login for Users and Hospitals** with secure JWT authentication
+- **Request blood** by choosing blood group, units required and urgency level, with an optional supporting document upload
+- **Track your requests** and see the status (for example Approved) and the hospital handling it
+- **Donate blood** by registering your availability, with eligibility checks (age 18 to 65, minimum weight 45 kg), last donation date and health details
+
+**For hospitals**
+- **Requests dashboard** to review active blood requests and accept or reject them
+- **Stock inventory** to view and adjust available units for all 8 blood groups (A+, A-, B+, B-, O+, O-, AB+, AB-)
+- **Community donations** tab to see donors who have registered to give blood
+
+**General**
+- **Real-time data handling** for up-to-date donor, request and stock information
 - **REST APIs** built with Node.js and Express.js
 - **Responsive UI** built with React.js, HTML, CSS and JavaScript
+- **Emergency contact details** shown in the footer (helpline and ambulance numbers)
 
 ## 🛠️ Tech Stack
 
@@ -35,15 +46,22 @@ Finding the right blood type quickly can save a life. Hope Drop gives donors and
 
 ## 📸 Screenshots
 
-> Add 3 to 4 screenshots here (home page, donor registration, hospital dashboard, blood request).
-> Put the images in a `screenshots/` folder in this repo, then link them like this:
+### Login (User and Hospital)
+<img width="1912" height="916" alt="login" src="https://github.com/user-attachments/assets/f7974544-c1f4-4426-98f2-0177f79e05c5" />
 
-```markdown
-![Home](screenshots/home.png)
-![Dashboard](screenshots/dashboard.png)
-```
+### Request Blood
+<img width="1890" height="923" alt="request-blood" src="https://github.com/user-attachments/assets/2b515128-dde1-4c90-8c19-b718ed546de6" />
 
-**Live demo:** _add link here if you deploy it_
+### Donate Blood
+<img width="1901" height="917" alt="donate-blood" src="https://github.com/user-attachments/assets/ff306fe1-3e4d-479d-8cd1-acd12b3c9b15" />
+
+### Hospital Dashboard: Active Requests
+<img width="1911" height="857" alt="hospital-requests" src="https://github.com/user-attachments/assets/f148e772-be73-4588-9b22-c32eeb1632bc" />
+
+### Hospital Dashboard: Stock Inventory
+<img width="1897" height="896" alt="stock-inventory" src="https://github.com/user-attachments/assets/b8b23aa5-0b83-4ec5-bd0c-22244d3a5c63" />
+
+---
 
 ## 🚀 Getting Started
 
@@ -112,7 +130,7 @@ I managed the database design and API development for this project.
 
 - Email or SMS alerts for urgent blood requests
 - Search donors by blood group and location
-- Admin dashboard for hospitals
+- Deploy the app and add a live demo link
 
 ## 📫 Contact
 
