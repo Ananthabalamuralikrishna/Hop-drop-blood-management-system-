@@ -1,0 +1,14 @@
+.auth-content {
+  display: flex;
+  justify-content: center;
+}
+
+.header-link {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: #b30000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#root {
+  min-height: 100vh;
+}
+

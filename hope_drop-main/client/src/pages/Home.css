@@ -1,0 +1,404 @@
+/* ===============================
+   GLOBAL RESET
+================================= */
+/* ===============================
+   GLOBAL RESET
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* ===============================
+   HERO SECTION (VIDEO + LOGIN)
+================================= */
+
+.home-layout {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  /* keeps floats inside */
+}
+
+/* ===============================
+   LEFT VIDEO
+================================= */
+
+.home-left {
+  width: 65%;
+  float: left;
+}
+
+.home-left video {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===============================
+   RIGHT LOGIN
+================================= */
+
+.home-right {
+  width: 35%;
+  float: right;
+  background-color: #f4f4f4;
+  height: 520px;
+  /* same height as video */
+  padding: 40px 30px;
+}
+
+/* ===============================
+   LOGIN CARD
+================================= */
+
+.login-card {
+  width: 100%;
+  height: 100%;
+  /* full height inside login */
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: none;
+  border-radius: 15px;
+}
+
+/* ===============================
+   TITLE
+================================= */
+
+.home-title {
+  margin-bottom: 25px;
+  color: #800000;
+  font-size: 24px;
+}
+
+/* ===============================
+   PASSWORD FIELD
+================================= */
+
+.password-row {
+  position: relative;
+}
+
+.show-password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 65%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #800000;
+  font-weight: bold;
+}
+
+/* ===============================
+   FORM STYLES
+================================= */
+
+.form-error {
+  color: red;
+  margin: 10px 0;
+}
+
+.form-footer-text {
+  margin-top: 15px;
+}
+
+/* ===============================
+   BLOG SECTION (UPDATED)
+================================= */
+
+.blog-section {
+  padding: 80px 60px;
+  width: 100%;
+  text-align: center;
+  /* Center all blog content */
+}
+
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  /* Center cards */
+  gap: 30px;
+  /* Space between cards */
+}
+
+.blog-card {
+  width: 32%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  /* Center text inside card */
+  padding-bottom: 20px;
+}
+
+/* Add space between image and text */
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  /* Space below image */
+}
+
+.blog-card h3 {
+  margin-bottom: 15px;
+  /* Space below heading */
+  color: #800000;
+}
+
+.blog-card p {
+  padding: 0 25px 20px 25px;
+  /* Space left & right */
+  line-height: 1.6;
+}
+
+.blog-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #d10000;
+}
+
+
+/* ===============================
+   TIPS SECTION (UPDATED)
+================================= */
+
+.tips-section {
+  padding: 80px 60px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  /* Center section */
+}
+
+.tips-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tips-card {
+  width: 32%;
+  background: #fdfdfd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: start;
+  /* Center tips text */
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Tips */
+.tips-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  background-color: #fff5f5;
+}
+
+.tips-card h3 {
+  margin-bottom: 20px;
+  color: #800000;
+}
+
+.tips-card ul {
+  list-style-position: inside;
+  /* Center bullet points */
+  padding: 0;
+}
+
+.tips-card li {
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   BLOOD SECTION
+================================= */
+
+.blood-section {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 70px 20px 0 20px;
+}
+
+.small-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.big-title {
+  font-size: 30px;
+  font-weight: 700;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  line-height: 1.4;
+  color: #333;
+  text-align: justify;
+}
+
+.highlight-text {
+  color: #d10000;
+  font-weight: 700;
+}
+
+.city-image-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.city-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 992px) {
+
+  .home-layout {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .home-left,
+  .home-right {
+    width: 100%;
+  }
+
+  .home-left video {
+    height: 300px;
+  }
+
+  .blog-cards,
+  .tips-cards {
+    flex-direction: column;
+  }
+
+  .blog-card,
+  .tips-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .section-description {
+    width: 90%;
+  }
+
+  .video-section iframe {
+    width: 90%;
+    height: 300px;
+  }
+
+  .donate-cta-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .donate-cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* ============================
+   DONATE BLOOD CTA SECTION
+   ============================ */
+
+.donate-cta-section {
+  background: linear-gradient(135deg, #7b0000 0%, #c0392b 60%, #e74c3c 100%);
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.donate-cta-section::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+}
+
+.donate-cta-section::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+}
+
+.donate-cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.donate-cta-text h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.donate-cta-text p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 540px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.donate-cta-btn {
+  flex-shrink: 0;
+  background: #fff;
+  color: #c0392b;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.donate-cta-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  color: #800000;
+}

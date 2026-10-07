@@ -1,0 +1,31 @@
+.toggle-tabs {
+  display: inline-flex;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  padding: 2px;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.toggle-tab {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  color: #666666;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.toggle-tab-active {
+  background-color: #b30000;
+  color: #ffffff;
+}
+
+.toggle-tab:not(.toggle-tab-active):hover {
+  background-color: #e0e0e0;
+}
+

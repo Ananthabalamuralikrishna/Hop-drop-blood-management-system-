@@ -1,0 +1,128 @@
+/* ===============================
+   Footer Main Container
+================================= */
+
+.footer {
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  color: #f5f5f5;
+  padding: 60px 20px 25px;
+  margin-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===============================
+   Footer Layout
+================================= */
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* ===============================
+   Footer Sections
+================================= */
+
+.footer-section {
+  flex: 1;
+  min-width: 240px;
+}
+
+/* Headings */
+
+.footer-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ff4d4d; /* Blood Red */
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ff4d4d;
+}
+
+/* Paragraph Text */
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 6px 0;
+  color: #cccccc;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+
+.footer-section p:hover {
+  color: #ff4d4d; /* Red Hover */
+  transform: translateX(6px);
+  text-shadow: 0 0 6px rgba(255, 77, 77, 0.4);
+}
+
+/* Underline Animation */
+
+.footer-section p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #ff4d4d;
+  transition: width 0.3s ease;
+}
+
+.footer-section p:hover::after {
+  width: 100%;
+}
+
+/* Tagline Styling */
+
+.footer-tagline {
+  font-weight: bold;
+  color: #ffd6d6;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   Footer Bottom
+================================= */
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid #333;
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+/* ===============================
+   Responsive Design
+================================= */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+
+  .footer-section p:hover {
+    transform: none;
+  }
+
+  .footer-section p::after {
+    display: none;
+  }
+}
